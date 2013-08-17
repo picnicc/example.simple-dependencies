@@ -18,18 +18,20 @@ Here, we get in touch with the [picnicc API](https://picni.cc/api/v1) using a si
 That's it.
 
 ### Plain
-[compile](https://picni.cc/api/v1/build/?username=picnicc&project=simple-compile.js&picnicc=https://raw.github.com/picnicc/example.simple-compile/master/picnicc.json&if_success=302)
+[compile](https://picni.cc/api/v1/build/?username=picnicc&project=simple-dependencies.js&picnicc=https://raw.github.com/picnicc/example.simple-dependencies/gh-pages/picnicc.json&if_success=302)
 
 
 ### Minified
-[compile](https://picni.cc/api/v1/build/?username=picnicc&project=simple-compile.js&picnicc=https://raw.github.com/picnicc/example.simple-compile/master/picnicc.json&if_success=302&minify=js)
+[compile](https://picni.cc/api/v1/build/?username=picnicc&project=simple-dependencies.js&picnicc=https://raw.github.com/picnicc/example.simple-dependencies/gh-pages/picnicc.json&if_success=302&minify=js)
 
 ## Customize (HTML form)
 
 Here, we get in touch with the [picnicc API](https://picni.cc/api/v1) through a simple HTML form, which lets our users tell the API what exactly should be put into the user's custom build.
 
+[See the form](http://picnicc.github.io/example.simple-dependencies/customize.html).
+
 ## The good thing is...
-The dependencies don't have to be included in our pug in's 
+The dependencies don't have to be included in our plugin's repo. Our picnicc.json file tells the API to grab dependencies directly from their "native" location.
 
 
 
