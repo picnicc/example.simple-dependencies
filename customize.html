@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>picnicc - compile-modular</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A simple modular example">
+        <meta name="author" content="Alex Duloz - http://bitspushedaround.com">
+    </head>
+    <body>
+        
+        <!-- THere's how you would include your plugin during dev: -->
+        <script src="yourPlugin.js"></script>
+        <script src="components/hello.js"></script>
+        <script src="components/foo.js"></script>
+        <script src="components/bar.js"></script>
+        <script>
+            yourPlugin.hello();   
+            yourPlugin.foo();   
+            yourPlugin.bar();
+        </script>
+    </body>
+</html>

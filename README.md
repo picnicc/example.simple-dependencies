@@ -18,11 +18,11 @@ Here, we get in touch with the [picnicc API](https://picni.cc/api/v1) using a si
 That's it.
 
 ### Plain
-[compile](https://picni.cc/api/v1/build/?username=picnicc&project=simple-dependencies&picnicc=https://raw.github.com/picnicc/example.simple-dependencies/gh-pages/picnicc.json&if_success=302)
+[compile](https://picni.cc/api/v1/build/?username=picnicc&project=simple-dependencies.js&picnicc=https://raw.github.com/picnicc/example.simple-dependencies/gh-pages/picnicc.json&if_success=302)
 
 
 ### Minified
-[compile](https://picni.cc/api/v1/build/?username=picnicc&project=simple-dependencies&picnicc=https://raw.github.com/picnicc/example.simple-dependencies/gh-pages/picnicc.json&if_success=302&minify=js)
+[compile](https://picni.cc/api/v1/build/?username=picnicc&project=simple-dependencies.js&picnicc=https://raw.github.com/picnicc/example.simple-dependencies/gh-pages/picnicc.json&if_success=302&minify=js)
 
 ## Customize (HTML form)
 
