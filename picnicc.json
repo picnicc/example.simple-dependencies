@@ -1,0 +1,10 @@
+{
+	"version": "0.0.1",
+	"assets": [
+		"http://code.jquery.com/jquery-1.10.2.js",
+		"https://raw.github.com/jashkenas/underscore/master/underscore.js",
+		"https://raw.github.com/jashkenas/backbone/master/backbone.js",
+		"https://raw.github.com/picnicc/example.simple-dependencies/gh-pages/lib/somePlugin.js"
+	],
+	"bits": []
+}
