@@ -28,7 +28,7 @@ That's it.
 
 Here, we get in touch with the [picnicc API](https://picni.cc/api/v1) through a simple HTML form, which lets our users tell the API what exactly should be put into the user's custom build.
 
-[See the form](http://customize.html).
+[See the form](http://picnicc.github.io/example.simple-dependencies/customize.html).
 
 ## The good thing is...
 The dependencies don't have to be included in our plugin's repo. Our picnicc.json file tells the API to grab dependencies directly from their "native" location.

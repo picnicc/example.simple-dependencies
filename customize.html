@@ -2,22 +2,49 @@
 <html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>picnicc - compile-modular</title>
+        <title>picnicc - form boilerplate</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A simple modular example">
+        <meta name="description" content="Remote dependencies from their source">
         <meta name="author" content="Alex Duloz - http://bitspushedaround.com">
     </head>
     <body>
-        
-        <!-- THere's how you would include your plugin during dev: -->
-        <script src="yourPlugin.js"></script>
-        <script src="components/hello.js"></script>
-        <script src="components/foo.js"></script>
-        <script src="components/bar.js"></script>
-        <script>
-            yourPlugin.hello();   
-            yourPlugin.foo();   
-            yourPlugin.bar();
-        </script>
+
+        <div class="container">
+
+            <h1>Picnicc: simple dependencies/h1>
+            
+            <form name="picnicc" action="https://picni.cc/api/v1/build/" method="post">
+
+                <input type="hidden" name="username" value="picnicc"> 
+                <input type="hidden" name="project" value="simple-dependencies.js">
+                <input type="hidden" name="picnicc" value="https://raw.github.com/picnicc/example.simple-dependencies/gh-pages/picnicc.json">
+                <input type="hidden" name="if_success" value="302">
+                <input type="hidden" name="if_error" value="_picnicc">
+
+                <h2>Pick only the dependencies you need</h2>
+
+                <label>
+                    <input type="checkbox" name="assets[]" value="http://code.jquery.com/jquery-1.10.2.js">
+                    Add <code>jQuery</code> to your build
+                </label>
+                <label>
+                    <input type="checkbox" name="assets[]" value="https://raw.github.com/jashkenas/underscore/master/underscore.js">
+                    Add <code>Underscore</code> to your build
+                </label>
+                <label>
+                    <input type="checkbox" name="assets[]" value="https://raw.github.com/jashkenas/backbone/master/backbone.js">
+                    Add <code>Backbone</code> to your build
+                </label>
+                <input type="hidden" name="assets[]" value="https://raw.github.com/picnicc/example.simple-dependencies/gh-pages/lib/somePlugin.js">
+
+                <label>
+                    <input type="checkbox" name="minify" value="js" checked="checked">
+                    Minify
+                </label>
+
+                <button>Build it!</button>
+            </form>
+        </div>
+
     </body>
 </html>
